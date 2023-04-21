@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Market</title>
+</head>
+<body>
+    <div class="container">
+        <div class="category-container">
+          <button class="category-btn">Categories</button>
+          <ul class="category-list">
+            <li class="category-item" data-category="phone">Phone</li>
+            <li class="category-item" data-category="mouse">Mouse</li>
+            <li class="category-item" data-category="monitor">Monitor</li>
+          </ul>
+        </div>
+        <div class="info-container">
+          <div class="category-info" id="phone-info">
+            <h2>Phone Information</h2>
+            <p>Here is some information about phones.</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+          <div class="category-info" id="mouse-info">
+            <h2>Mouse Information</h2>
+            <p>Here is some information about mice.</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+          <div class="category-info" id="monitor-info">
+            <h2>Monitor Information</h2>
+            <p>Here is some information about monitors.</p>
+            <button class="buy-btn">Buy</button>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup__container">
+          <div class="popup__wrapper">
+            <div id="blablabla">
+              <form class="form" role="form" action="/requestFine" autocomplete="off" method="GET">
+                <label>Name:</label>
+                <input class="first-name" type="text" name="nameReq">
+                <br>
+                <label>Second name:</label>
+                <input class="second-name" type="text" name="lastNameReq">
+                <br>
+                <label for="city">Choose your city:</label>
+                  <select class="city" id="city" name="city">
+                      <option value="Odesa">Odesa</option>
+                      <option value="Kyiv">Kyiv</option>
+                      <option value="Kharkov">Kharkov</option>
+                      <option value="Dnipro">Dnipro</option>
+                  </select>
+                  <br>
+                <label>Warehouse of New Post:</label>
+                <input class="warehouse" type="text" name="warehouseReq">
+                  <br>
+
+                <legend>Enter the way of payment:</legend>
+                  <div>
+                    <input class="payment-way" type="checkbox" id="card" name="payment" value="Card">
+                    <label for="card">Card</label>
+                  </div>
+                  <div>
+                    <input class="payment-way" type="checkbox" id="cash" name="payment" value="Cash">
+                    <label for="cash">Cash</label>
+                  </div>
+                <br>
+                <label>Amount: </label>
+                <input class="amount" type="text" name="amountReq">
+                <br>
+                <label>Your comments:</label>
+                <input class="comment" type="text" name="textReq">
+                <br>
+                <button type="submit" class="btn btn-success">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
